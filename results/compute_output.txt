@@ -1,0 +1,101 @@
+Graph: {'coxeter_type': "['A', 5]", 'vertices': 720, 'degree': 23, 'edges': 8280, 'closed_neighbors': 24}
+
+=== A.1: Cubical model and structural checks ===
+Cubical infrastructure checks: {'normalization_patterns': 4158, 'generator_cubes': 296448}
+Square inventory: {'all_based_2': 4146, 'normalized_based_2': 4053, 'support_distribution': {1: 15, 2: 1026, 3: 2526, 4: 486}}
+Verified normalized based squares: 4053
+
+Output terminology:
+  C2 = dimension of the local relative 2-chain group
+  rank d2/d3 = ranks of the corresponding boundary maps
+  exhaustive columns = 3-cube boundary columns exhaustively processed
+  cones/prisms = candidate 3-cubes processed by the two constructions
+  columns = boundary columns processed (not necessarily independent)
+  replayed = independent boundaries recomputed from source cubes
+
+=== A.2 / Homology of F1 ===
+F1: C1 = 3600 C2 = 10800 rank d1 = 719 rank d2 = 1800 H1 = 1081
+
+=== A.2 / Rank-one local blocks ===
+J = (1,) |W_J| = 2 C2 = 6 rank d2 = 1 rank d3 = 5 H2 = 0 exhaustive columns = 182
+J = (2,) |W_J| = 2 C2 = 6 rank d2 = 1 rank d3 = 5 H2 = 0 exhaustive columns = 182
+J = (3,) |W_J| = 2 C2 = 6 rank d2 = 1 rank d3 = 5 H2 = 0 exhaustive columns = 182
+J = (4,) |W_J| = 2 C2 = 6 rank d2 = 1 rank d3 = 5 H2 = 0 exhaustive columns = 182
+J = (5,) |W_J| = 2 C2 = 6 rank d2 = 1 rank d3 = 5 H2 = 0 exhaustive columns = 182
+
+=== A.2 / Table 1: Rank-two local blocks ===
+J = (1, 2) |W_J| = 6 C2 = 1134 rank d2 = 18 rank d3 = 1115 H2 = 1 exhaustive columns = 1669878
+J = (1, 3) |W_J| = 4 C2 = 180 rank d2 = 4 rank d3 = 175 H2 = 1 exhaustive columns = 63196
+J = (1, 4) |W_J| = 4 C2 = 180 rank d2 = 4 rank d3 = 175 H2 = 1 exhaustive columns = 63196
+J = (1, 5) |W_J| = 4 C2 = 180 rank d2 = 4 rank d3 = 175 H2 = 1 exhaustive columns = 63196
+J = (2, 3) |W_J| = 6 C2 = 1134 rank d2 = 18 rank d3 = 1115 H2 = 1 exhaustive columns = 1669878
+J = (2, 4) |W_J| = 4 C2 = 180 rank d2 = 4 rank d3 = 175 H2 = 1 exhaustive columns = 63196
+J = (2, 5) |W_J| = 4 C2 = 180 rank d2 = 4 rank d3 = 175 H2 = 1 exhaustive columns = 63196
+J = (3, 4) |W_J| = 6 C2 = 1134 rank d2 = 18 rank d3 = 1115 H2 = 1 exhaustive columns = 1669878
+J = (3, 5) |W_J| = 4 C2 = 180 rank d2 = 4 rank d3 = 175 H2 = 1 exhaustive columns = 63196
+J = (4, 5) |W_J| = 6 C2 = 1134 rank d2 = 18 rank d3 = 1115 H2 = 1 exhaustive columns = 1669878
+
+=== A.2 / Table 2: Connecting homomorphism delta2 ===
+Target: dim H1(F1) = 1081
+J = (1, 2) cosets = 120 new rank = 120 cumulative = 120
+J = (1, 3) cosets = 180 new rank = 180 cumulative = 300
+J = (1, 4) cosets = 180 new rank = 180 cumulative = 480
+J = (1, 5) cosets = 180 new rank = 180 cumulative = 660
+J = (2, 3) cosets = 120 new rank = 90 cumulative = 750
+J = (2, 4) cosets = 180 new rank = 120 cumulative = 870
+J = (2, 5) cosets = 180 new rank = 120 cumulative = 990
+J = (3, 4) cosets = 120 new rank = 36 cumulative = 1026
+J = (3, 5) cosets = 180 new rank = 45 cumulative = 1071
+J = (4, 5) cosets = 120 new rank = 10 cumulative = 1081
+delta2: domain = 1560 rank = 1081 kernel = 479 dim H2(F2) = 479
+
+=== A.3 / Table 3: Rank-three relative blocks ===
+J = (1, 2, 3) C2 = 7728 rank d3 = 7728 cones = 1002 prisms = 1214 columns = 53184 replayed = 7728
+J = (1, 2, 4) C2 = 2856 rank d3 = 2856 cones = 750 prisms = 542 columns = 15504 replayed = 2856
+J = (1, 2, 5) C2 = 2856 rank d3 = 2856 cones = 750 prisms = 542 columns = 15504 replayed = 2856
+J = (1, 3, 4) C2 = 2856 rank d3 = 2856 cones = 750 prisms = 727 columns = 17724 replayed = 2856
+J = (1, 3, 5) C2 = 1056 rank d3 = 1056 cones = 566 prisms = 0 columns = 4528 replayed = 1056
+J = (1, 4, 5) C2 = 2856 rank d3 = 2856 cones = 750 prisms = 727 columns = 17724 replayed = 2856
+J = (2, 3, 4) C2 = 7728 rank d3 = 7728 cones = 1002 prisms = 1214 columns = 53184 replayed = 7728
+J = (2, 3, 5) C2 = 2856 rank d3 = 2856 cones = 750 prisms = 542 columns = 15504 replayed = 2856
+J = (2, 4, 5) C2 = 2856 rank d3 = 2856 cones = 750 prisms = 727 columns = 17724 replayed = 2856
+J = (3, 4, 5) C2 = 7728 rank d3 = 7728 cones = 1002 prisms = 1214 columns = 53184 replayed = 7728
+
+=== A.3 / Table 4: Connecting homomorphism delta3 ===
+Global residual coordinate dimension = 14520
+completed J = (1, 2, 3) columns = 33840768 upper rank = 7728 new rank = 30 cumulative rank = 30
+completed J = (1, 2, 4) columns = 12030504 upper rank = 2856 new rank = 60 cumulative rank = 90
+completed J = (1, 2, 5) columns = 12030504 upper rank = 2856 new rank = 60 cumulative rank = 150
+completed J = (1, 3, 4) columns = 12030504 upper rank = 2856 new rank = 60 cumulative rank = 210
+completed J = (1, 3, 5) columns = 3042480 upper rank = 1056 new rank = 90 cumulative rank = 300
+completed J = (1, 4, 5) columns = 12030504 upper rank = 2856 new rank = 60 cumulative rank = 360
+completed J = (2, 3, 4) columns = 33840768 upper rank = 7728 new rank = 24 cumulative rank = 384
+completed J = (2, 3, 5) columns = 12030504 upper rank = 2856 new rank = 45 cumulative rank = 429
+completed J = (2, 4, 5) columns = 12030504 upper rank = 2856 new rank = 40 cumulative rank = 469
+completed J = (3, 4, 5) columns = 25509457 upper rank = 7728 new rank = 10 cumulative rank = 479
+rank delta3 = 479
+Independent replayed delta3 images = 479
+Original replayable relative C3 source cycles = 10
+
+=== A.4 / Table 5: Rank-four relative blocks ===
+J = (1, 2, 3, 4) C2 = 12000 rank d3 = 12000 cones = 244 prisms = 0 columns = 29280 replayed = 12000
+J = (1, 2, 3, 5) C2 = 4032 rank d3 = 4032 cones = 268 prisms = 0 columns = 12864 replayed = 4032
+J = (1, 2, 4, 5) C2 = 4248 rank d3 = 4248 cones = 268 prisms = 13120 columns = 481968 replayed = 4248
+J = (1, 3, 4, 5) C2 = 4032 rank d3 = 4032 cones = 268 prisms = 0 columns = 12864 replayed = 4032
+J = (2, 3, 4, 5) C2 = 12000 rank d3 = 12000 cones = 244 prisms = 0 columns = 29280 replayed = 12000
+
+=== A.4 / Table 6: Support-rank distribution ===
+Support-rank distribution of normalized based 2-cubes = {1: 15, 2: 1026, 3: 2526, 4: 486}
+Maximal support rank among normalized 2-cubes = 4
+
+=== Final verified summary ===
+vertices of G_{5,4} = 720
+normalized based 2-cubes = 4053
+dim H1(F1) = 1081
+dim H2(F2) = 479
+rank delta3 = 479
+dim H2(F3) = 0
+maximal support rank among normalized 2-cubes = 4
+elapsed seconds = 438.037
+
+FINAL VERIFIED COMPUTATIONAL CONCLUSION: DH_2(G_{5,4}; F_2) = 0.
